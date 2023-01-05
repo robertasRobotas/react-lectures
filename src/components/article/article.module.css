@@ -1,0 +1,25 @@
+.main {
+  height: 200px;
+  width: 150px;
+  background-color: brown;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.main:hover {
+  background-color: rgb(159, 62, 62);
+  box-shadow: 0px -3px 169px -52px rgba(0, 0, 0, 0.75);
+}
+
+.image {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
