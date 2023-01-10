@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.title {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+.description {
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.spinner-wrapper {
+  margin-top: 250px;
+}

@@ -3,8 +3,6 @@ import styles from "./mainBody.module.css";
 import Article from "../article/article";
 
 const mainBody = ({ todayDate, articleTitle, articles, setTitle }) => {
-  console.log("articles", articles);
-
   return (
     <div className={styles.mainBody}>
       <div
