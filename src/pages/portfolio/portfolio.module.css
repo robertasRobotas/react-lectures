@@ -1,0 +1,43 @@
+.title {
+  background-color: rgb(207, 207, 207);
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.inputForm {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.inputForm input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.tasksWrapper {
+  margin-top: 60px;
+}
+
+.taskWrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: brown;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.taskWrapper img {
+  width: 24px;
+  height: 24px;
+}
+
+.taskWrapper button {
+  all: unset;
+  cursor: pointer;
+}

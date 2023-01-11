@@ -9,8 +9,6 @@ const App = () => {
   const [currency, setCurrency] = useState();
   const [isLoading, setIsLoading] = useState(true);
 
-  console.log("id", id);
-
   const fetchCurrency = async () => {
     const result = await fetch("https://api.coingecko.com/api/v3/coins/" + id);
     const currency = await result.json();

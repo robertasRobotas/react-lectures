@@ -1,14 +1,22 @@
 import React from "react";
 import styles from "./navbar.module.css";
+import { Link } from "react-router-dom";
+import Logo from "../atoms/logo/Logo";
 
 const navbar = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>LOGO</div>
+      <Logo />
       <ul className={styles.menuList}>
-        <li>About</li>
-        <li>Portfolio</li>
-        <li>Contacts</li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/portfolio">Portfolio</Link>
+        </li>
+        <li>
+          <Link to="/contacts">Contacts</Link>
+        </li>
       </ul>
     </header>
   );
