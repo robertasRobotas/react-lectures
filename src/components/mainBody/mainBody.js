@@ -1,23 +1,13 @@
 import React from "react";
 import styles from "./mainBody.module.css";
-import Article from "../article/article";
+import Title from "../title/title";
+import ArticleList from "../articleList/articleList";
 
-const mainBody = ({ todayDate, articleTitle, articles, setTitle }) => {
+const mainBody = ({ articleTitle, articles }) => {
   return (
     <div className={styles.mainBody}>
-      <div
-        onClick={() => {
-          setTitle("Reactas valdo!");
-        }}
-        className={styles.title}
-      >
-        {articleTitle}
-      </div>
-      <div className={styles.articlesWrapper}>
-        {articles.map((article) => {
-          return <Article article={article} />;
-        })}
-      </div>
+      <Title articleTitle={articleTitle} />
+      <ArticleList articles={articles} />
     </div>
   );
 };

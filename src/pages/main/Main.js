@@ -3,12 +3,16 @@ import { useState, useEffect } from "react";
 import Navbar from "../../components/navbar/navbar";
 import Footer from "../../components/footer/footer";
 import MainBody from "../../components/mainBody/mainBody";
-
+import { useNavigate } from "react-router-dom";
 import styles from "./app.module.css";
 
 const App = () => {
   const [title, setTitle] = useState("Our todays articles");
   const [currencies, setCurrencies] = useState([]);
+
+  const navigate = useNavigate();
+
+  const isRedirect = false;
 
   const fetchCurrencies = async () => {
     const result = await fetch(
@@ -22,6 +26,12 @@ const App = () => {
     setCurrencies(currencies);
     console.log("currencies", currencies);
   };
+
+  useEffect(() => {
+    if (isRedirect === true) {
+      navigate(`/portfolio`);
+    }
+  }, []);
 
   useEffect(() => {
     fetchCurrencies();
