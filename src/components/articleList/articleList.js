@@ -1,14 +1,23 @@
 import React from "react";
-import styles from "./articleList.module.css";
 import Article from "../article/article";
+import styled from "styled-components";
+
+const ArticleWrapper = styled.div`
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+`;
 
 const articleList = ({ articles }) => {
   return (
-    <div className={styles.articlesWrapper}>
+    <ArticleWrapper>
       {articles.map((article) => {
         return <Article article={article} />;
       })}
-    </div>
+    </ArticleWrapper>
   );
 };
 

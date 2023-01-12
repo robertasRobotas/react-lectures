@@ -3,7 +3,14 @@ import styles from "./footer.module.css";
 
 const footer = () => {
   return (
-    <div className={styles.footer}>
+    <div
+      style={{
+        backgroundColor: "green",
+        padding: "40px",
+        display: "flex",
+        justifyContent: "center",
+      }}
+    >
       <div>©CodeAcademy</div>
     </div>
   );

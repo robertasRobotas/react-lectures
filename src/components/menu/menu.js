@@ -1,15 +1,21 @@
 import React from "react";
-import styles from "./menu.module.css";
 import Link from "../link/link";
+import styled from "styled-components";
+
+const LinksWrapper = styled.ul`
+  display: flex;
+  list-style-type: none;
+  gap: 25px;
+`;
 
 const menu = () => {
   return (
-    <ul className={styles.menuList}>
+    <LinksWrapper>
       <Link path="about" text="About" />
       <Link path="company" text="Company" />
       <Link path="portfolio" text="Portfolio" />
       <Link path="sayHello" text="Say Hello" />
-    </ul>
+    </LinksWrapper>
   );
 };
 

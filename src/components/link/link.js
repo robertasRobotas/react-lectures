@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styles from "./link.module.css";
 
 const link = ({ path, text }) => {
   return (
-    <li>
+    <li className={styles.linkWrapper}>
       <Link to={`/${path}`}>{text}</Link>
     </li>
   );

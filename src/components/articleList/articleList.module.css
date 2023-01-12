@@ -1,21 +1,8 @@
-.mainBody {
-  width: 100%;
-  background-color: rgb(13, 89, 89);
-}
-
 .articlesWrapper {
   margin-top: 30px;
   margin-bottom: 30px;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-}
-
-.title {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 34px;
-  color: azure;
 }

@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./navbar.module.css";
+import "./navbar.css";
 import Logo from "../atoms/logo/Logo";
 import Menu from "../menu/menu";
 
 const navbar = () => {
   return (
-    <header className={styles.header}>
+    <header className="header">
       <Logo />
       <Menu />
     </header>
